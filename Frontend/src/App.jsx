@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+
 import Contact from "./pages/Contact";
 import Doctor from "./Pages/Doctor";
 import Login from "./Pages/Login";
@@ -10,6 +10,7 @@ import MyAppointment from "./Pages/MyAppointment";
 import Appointment from "./Pages/Appointment";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import About from "./Pages/About";
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="/doctors" element={<Doctor />} />
         <Route path="/doctors/:speciality" element={<Doctor />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/my-appointments" element={<MyAppointment/>} />
